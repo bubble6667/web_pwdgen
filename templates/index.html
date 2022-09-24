@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Password generator</title>
+</head>
+<body>
+        <form class="grid" action="/result" method="POST">
+            {% if pwd %}
+                <h3>{{pwd}}</h3>
+            {% else %}
+                <h3> Ready to generate some passwords </h3>
+            {% endif %}
+             <input type="submit" value="Generate">
+        </form>
+</body>
+</html>
